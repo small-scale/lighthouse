@@ -13,7 +13,7 @@ import Risks from "./risks"
 const Results = {
     view:(vnode)=>{
         return m("div", [
-            m("h1", {"class":"f2 fw7 mt5", "style":`color:"black"}`}, 
+            m("h1", {"class":"f2-ns f4 fw7 mt3-ns mt2", "style":`color:"black"}`}, 
                 "Purpose"            
             ),
             m(Purpose, {
@@ -21,7 +21,7 @@ const Results = {
                 section: "purpose", 
                 copy: "disabled"
             }),
-            m("h1", {"class":"f2 fw7 mt5", "style":`color:"black"}`}, 
+            m("h1", {"class":"f2-ns f4 fw7 mt5", "style":`color:"black"}`}, 
                 "Beneficiaries"            
             ),
             m(Beneficiaries, {
@@ -29,7 +29,7 @@ const Results = {
                 section: "beneficiaries", 
                 copy: "disabled"
             }),
-            m("h1", {"class":"f2 fw7 mt5", "style":`color:"black"}`}, 
+            m("h1", {"class":"f2-ns f4 fw7 mt5", "style":`color:"black"}`}, 
                 "Assets"            
             ),
             m(Assets, {
@@ -37,7 +37,7 @@ const Results = {
                 section: "assets", 
                 copy: "disabled"
             }),
-            m("h1", {"class":"f2 fw7 mt5", "style":`color:"black"}`}, 
+            m("h1", {"class":"f2-ns f4 fw7 mt5", "style":`color:"black"}`}, 
                 "Management"            
             ),
             m(Management, {
@@ -45,7 +45,7 @@ const Results = {
                 section: "management", 
                 copy: "disabled"
             }),
-            m("h1", {"class":"f2 fw7 mt5", "style":`color:"black"}`}, 
+            m("h1", {"class":"f2-ns f4 fw7 mt5", "style":`color:"black"}`}, 
                 "Permissions"            
             ),
             m(Permissions, {
@@ -53,7 +53,7 @@ const Results = {
                 section: "permissions", 
                 copy: "disabled"
             }),
-            m("h1", {"class":"f2 fw7 mt5", "style":`color:"black"}`}, 
+            m("h1", {"class":"f2-ns f4 fw7 mt5", "style":`color:"black"}`}, 
                 "Risks"            
             ),
             m(Risks, {
