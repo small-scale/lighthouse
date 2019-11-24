@@ -14,7 +14,7 @@ const subSectionHeader = {
     view: (vnode)=>{
        return m("h2", {class:`db white ${vnode.attrs.shorten ? "mt3" : "mt5"}`, style: `background-color:${Colors[vnode.attrs.section]["primary"]}`}, [
             m("div", {class:"dtc v-mid mr2"}, [m("img", {class:"h3 dtc v-mid", src: `static/${vnode.attrs.icon}.png`})]),
-            m("div", {class:"ml2 dtc f3 v-mid"}, vnode.attrs.subtitle),
+            m("div", {class:"ml2 dtc f3-ns f4 v-mid"}, vnode.attrs.subtitle),
         ])
     }
 }
@@ -141,7 +141,7 @@ const emojiHorizDisabled = {
     },
     view:(vnode)=>{
         return m("div", {class:"dt mv2 outline w-100 tc ba b--black bw1 f1 mr2 white"}, [
-            m("div",{class:"dtc ph3 w-20 v-mid f3 pv2", style:`background-color:${Colors[vnode.attrs.section]["lighter"] }`}, vnode.attrs.emoji),
+            m("div",{class:"dtc ph3 w-20-ns w-25 v-mid f3 pv2", style:`background-color:${Colors[vnode.attrs.section]["lighter"] }`}, vnode.attrs.emoji),
             m("div",{class:`dtc v-mid ph2 pv2 tl f5 bg-black-10`}, ""),
         ])
     }

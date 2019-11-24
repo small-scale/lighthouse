@@ -6,7 +6,7 @@ const Layout = {
         return [
             m("nav", {"class":"dt w-100  border-box center pa3 ph5-l"},
               [
-                m("a", {"class":"dtc v-mid mid-gray  tl mb2 mb0-l","href":"#","title":"Home"},
+                m("a", {"class":"dtc v-mid mid-gray  tl-ns tc mb2 mb0-l","href":"#","title":"Home"},
                   [
                     m("img", {"class":"dib h4","src":"static/lighthouse.png","alt":"Lighthouse"}),
                    // m("img", {"class":"dib h3","src":"/img/logo.png","alt":"Digital Public"})
@@ -28,10 +28,10 @@ const Layout = {
                 m("h1", {"class":"f3 f1-ns fw7", "style":`color:${vnode.attrs.color || "black"}`}, 
                   vnode.attrs.title
                 ),
-                m("section", {"class":"f4 lh-copy"}, 
+                m("section", {"class":"f4-ns f5 lh-copy"}, 
                  vnode.children
                 ),
-                m("section", {"class":"f4 mt3 lh-copy"},
+                m("section", {"class":"f4-ns f5 mt3 lh-copy"},
                   [
                     vnode.attrs.nextCopy === null ? null :   
                     m(m.route.Link, {"class":"link black mt4 db tr","href":`/${vnode.attrs.nextLink}`},
