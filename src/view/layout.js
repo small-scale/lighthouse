@@ -19,12 +19,12 @@ const Layout = {
             ), 
             m("article", {"class":"pa3 pa5-ns pt3-ns mw7 center montserrat near-black"},
               [
-                m("div", {"class":"h1 flex"},
+                vnode.attrs.step ? m("div", {"class":"h1 flex"},
                   [0,1,2,3,4,5].map(function(item){
                     const fill = vnode.attrs.step >= item
                     return m("div", {"class": `w-25 outline h1 ${item == 5 ? "" : "mr2"}`, "style":`outline-color: ${vnode.attrs.color};background-color:${fill ? vnode.attrs.color :"white"}`})
                   }) 
-                ),
+                ) : null,
                 m("h1", {"class":"f3 f1-ns fw7", "style":`color:${vnode.attrs.color || "black"}`}, 
                   vnode.attrs.title
                 ),
