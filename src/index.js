@@ -186,11 +186,10 @@ localforage.ready().then(function(){
             render: ()=>{
                 return m(Layout, 
                         {title: "Your results",
-                        step: null,
                         prevLink: "risks",
                         prevCopy: "What risks does your project face?",
                         nextCopy: null,
-                        step: 5,
+                        step: null,
                         color: "black"
                         }, 
                         m(Results, {
