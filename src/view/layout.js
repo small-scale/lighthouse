@@ -8,7 +8,7 @@ const Layout = {
               [
                 m("a", {"class":"dtc v-mid mid-gray  tl-ns tc mb2 mb0-l","href":"#","title":"Home"},
                   [
-                    m("img", {"class":"dib h4","src":"static/lighthouse.png","alt":"Lighthouse"}),
+                    m("img", {"class":"dib h4-ns h3","src":"static/lighthouse.png","alt":"Lighthouse"}),
                    // m("img", {"class":"dib h3","src":"/img/logo.png","alt":"Digital Public"})
                   ]
                 ),
