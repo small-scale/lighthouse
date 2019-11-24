@@ -8,7 +8,7 @@ const Sections = {
         subsection: "identify",
         question: "Have you identified your project’s beneficiaries?",
         choices: [
-            "No, we haven’t named any beneficiaries. Our project is for everyone. Even the people who are working against it.",
+            "No, we haven’t named any beneficiaries.",
             null,
             "Yes, our project has specific beneficiaries.",
             null,
@@ -58,7 +58,7 @@ const Sections = {
         subsection: "protection",
         question: "How robust are your data privacy policies?",
         choices: [
-            "We don’t have any data privacy policies. We trust everyone to do the right thing.",
+            "We don’t have any data privacy policies.",
             "We comply with relevant local data protection laws (e.g., GDPR)...",
             "AND we have internal data privacy policies to protect workers...",
             "AND our project partners certify their compliance with data protection laws...",

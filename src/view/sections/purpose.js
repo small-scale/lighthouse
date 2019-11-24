@@ -8,7 +8,7 @@ const Sections = {
         subsection: "basics",
         question: "So, let’s start simple. Have you written your project’s purpose down?",
         choices: [
-            "No, we're doing it live.",
+            "No.",
             "Not really. We have some common language that we use, but everyone mostly uses their own words.",
             "Sort of. We’ve sent written descriptions of our project to funders, but don’t have an official written statement of purpose.",
             "Yes. Our project has a written purpose that describes the project's high-level goals.",
@@ -43,7 +43,7 @@ const Sections = {
         subsection: "progress",
         question: "Do you regularly review your project plan?",
         choices: [
-            "What project plan?",
+            "We don't have a project plan.",
             "We don’t review it. We haven’t opened our project plan since we finished writing it.",
             "We’ve reviewed our progress before, but we don’t do it regularly. ",
             "We regularly review the project's progress against the purpose.",

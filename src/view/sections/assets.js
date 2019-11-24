@@ -8,7 +8,7 @@ const Sections = {
         subsection: "inventory",
         question: "How well do you know your project’s data?",
         choices: [
-            "We have no idea what data our project uses or produces. Despite all that, it seems to work!",
+            "Not very well. Our teams are siloed and no one has a good sense of all of the data that the project uses.",
             null,
             "If you asked enough people on our team, they would be able to list all of the data that our project uses. But we don’t keep track of that in any structured way.",
             null,

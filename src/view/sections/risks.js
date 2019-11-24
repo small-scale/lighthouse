@@ -8,7 +8,7 @@ const Sections = {
         subsection: "tracking",
         question: "How do you keep track of your project's risks?",
         choices: [
-            "We don’t keep track of risks, because it ruins the surprise when one appears.",
+            "We don’t keep track of risks in any formal way.",
             "We track project risks in a risk register. Where relevant, project subgroups maintain their own risk registers, which we incorporate into the overall project register...",
             "AND We actively maintain and review the risk register at least once a quarter….",
             "AND Our risk tracking includes both internal and external risk factors including relationships with third party service providers...",

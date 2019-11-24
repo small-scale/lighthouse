@@ -8,7 +8,7 @@ const Sections = {
         subsection: "managing",
         question: "How do you manage access to your project’s data?",
         choices: [
-            "We let everyone use all the data. It’s much easier that way.",
+            "We don't have any controls on how our data is used.",
             "We keep lists of permitted and/or prohibited uses and users for data...",
             "AND we have a process for handling data uses that require additional consent (such as from workers)...",
             "AND We have a process for handling a novel requests for data or digital assets...",
