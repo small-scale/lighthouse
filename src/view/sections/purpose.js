@@ -6,7 +6,7 @@ const Sections = {
         type: "choices",
         subtitle: "The basics",
         subsection: "basics",
-        question: "So, let’s start simple. Have you written your project’s purpose down?",
+        question: "Have you written your project’s purpose down?",
         choices: [
             "No.",
             "Not really. We have some common language that we use, but everyone mostly uses their own words.",
