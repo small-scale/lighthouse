@@ -4,7 +4,7 @@ import {Model} from "../model/model"
 const Layout = {
     view: (vnode)=>{
         return [
-            m("nav", {"class":"dt w-100  border-box center pa3 ph5-l"},
+            m("nav", {"class":"dt w-100  border-box center pa3 pb3-ns pb0 ph5-l"},
               [
                 m("a", {"class":"dtc v-mid mid-gray  tl-ns tc mb1","href":"#","title":"Home"},
                   [
@@ -17,7 +17,7 @@ const Layout = {
                 )*/
               ]
             ), 
-            m("article", {"class":"pa3 pa5-ns pt3-ns mw7 center montserrat near-black"},
+            m("article", {"class":"pa3 pa5-ns pt3-ns pt0 mw7 center montserrat near-black"},
               [
                 vnode.attrs.step ? m("div", {"class":"h1 flex"},
                   [0,1,2,3,4,5].map(function(item){
