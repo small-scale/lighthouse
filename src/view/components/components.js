@@ -13,7 +13,7 @@ const emojiScale = ["😱","😰", "😐", "😁", "🤩"]
 const subSectionHeader = {
     view: (vnode)=>{
        return m("h2", {class:`db white ${vnode.attrs.shorten ? "mt3" : "mt5"}`, style: `background-color:${Colors[vnode.attrs.section]["primary"]}`}, [
-            m("div", {class:"dtc v-mid mr2"}, [m("img", {class:"h3 dtc v-mid", src: `static/${vnode.attrs.icon}.png`})]),
+            m("div", {class:"dtc v-mid mr2"}, [m("img", {class:"h3 w3 dtc v-mid", src: `static/${vnode.attrs.icon}.png`})]),
             m("div", {class:"ml2 dtc f3-ns f5 v-mid"}, vnode.attrs.subtitle),
         ])
     }
