@@ -14,7 +14,7 @@ const subSectionHeader = {
     view: (vnode)=>{
        return m("h2", {class:`db white ${vnode.attrs.shorten ? "mt3" : "mt5"}`, style: `background-color:${Colors[vnode.attrs.section]["primary"]}`}, [
             m("div", {class:"dtc v-mid mr2"}, [m("img", {class:"h3 dtc v-mid", src: `static/${vnode.attrs.icon}.png`})]),
-            m("div", {class:"ml2 dtc f3-ns f4 v-mid"}, vnode.attrs.subtitle),
+            m("div", {class:"ml2 dtc f3-ns f5 v-mid"}, vnode.attrs.subtitle),
         ])
     }
 }
@@ -46,7 +46,7 @@ const checkboxListComponent = {
 const checkboxComponent = {
     view: (vnode)=>{
         
-        return m("div", {class:"mb3 f4 lh-copy flex flex-between"}, [
+        return m("div", {class:"mb3 f4-ns f5 lh-copy flex flex-between"}, [
             m("input", {class:"o-0", id: `${vnode.attrs.section}-${vnode.attrs.subsection}-${vnode.attrs.order}`, type: "checkbox", checked:vnode.attrs.checked, oninput:(e)=>{
                 const completePath = append(vnode.attrs.order, vnode.attrs.path)
                 Dispatch(completePath, e.target.checked)
