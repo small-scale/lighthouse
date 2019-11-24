@@ -1,6 +1,6 @@
 const path = require('path');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -8,7 +8,7 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'dist/assets')
+    path: path.resolve(__dirname, 'dist')
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
@@ -31,8 +31,9 @@ module.exports = {
   plugins: [
   //  new ExtractTextPlugin({filename:'app.bundle.css'}),
     new UglifyJsPlugin(),
-    new CopyWebpackPlugin([
-      { from: './src/static' }
+    new CopyPlugin([
+      { from: './src/static', to: "static"},
+      { from: './src/pages'},
     ])
 
 ]
