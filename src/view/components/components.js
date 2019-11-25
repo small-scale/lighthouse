@@ -8,7 +8,10 @@ import identity from "ramda/src/identity"
 import { Dispatch } from "../../model/model"
 import Colors from "../styles"
 
-const emojiScale = ["😱","😰", "😐", "😁", "🤩"]
+const emojiFaceScale = ["😱","😰", "😐", "😁", "🤩"]
+const emojiScale = ["😟", "😐", "🙂", "😁", "🤩"]
+const emojiFireScale = ["🕯️","🔥","💡","🔦","☀️"]
+const emojiSunScale = ["☁️", "🌥️","⛅","🌤️","☀️"]
 
 const subSectionHeader = {
     view: (vnode)=>{

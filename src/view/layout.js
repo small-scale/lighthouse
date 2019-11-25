@@ -1,17 +1,26 @@
 import m from "mithril"
 import {Model} from "../model/model"
 
+const Order = ["purpose", "beneficiaries", "assets", "management", "permissions", "risks"]
+
 const Layout = {
     view: (vnode)=>{
         return [
-            m("nav", {"class":"dt w-100  border-box center pa3 pb3-ns pb0 ph5-l"},
+            m("nav", {"class":"dt w-100  flex-ns border-box center pa3 pb3-ns pb0 ph5-l"},
               [
-                m("a", {"class":"dtc v-mid mid-gray  tl-ns tc mb1","href":"#","title":"Home"},
+                m("a", {"class":"dtc-ns  db v-mid mid-gray  tl-ns tc mb1","href":"#","title":"Home"},
                   [
-                    m("img", {"class":"dib h4","src":"static/lighthouse.png","alt":"Lighthouse"}),
+                    m("img", {"class":"dib w4","src":"static/lighthouse.png","alt":"Lighthouse"}),
+
                    // m("img", {"class":"dib h3","src":"/img/logo.png","alt":"Digital Public"})
                   ]
-                ),
+                ), m("div", {"class":"dtc-ns dn v-mid mid-gray  tl-ns tc mb1","href":"#","title":"Home"},
+                [
+                   m("div", {"class":"dtc h4-ns f3-ns v-mid f4 fw2 montserrat near-black"}, "Lighthouse: a data stewardship guide"),
+
+                 // m("img", {"class":"dib h3","src":"/img/logo.png","alt":"Digital Public"})
+                ]
+              ),
                /* m("a", {"class":"pointer dtc v-mid mid-gray z-99 link dim tr mb2 mb0-l","id":"menuburger","onclick":"showMenu()","title":"Menu"}, 
                   m("i", {"class":"fas f2 fa-bars near-black"})
                 )*/
@@ -19,10 +28,10 @@ const Layout = {
             ), 
             m("article", {"class":"pa3 pa5-ns pt3-ns pt0 mw7 center montserrat near-black"},
               [
-                vnode.attrs.step ? m("div", {"class":"h1 flex"},
+                vnode.attrs.step != null ? m("div", {"class":"h1 flex"},
                   [0,1,2,3,4,5].map(function(item){
                     const fill = vnode.attrs.step >= item
-                    return m("div", {"class": `w-25 outline h1 ${item == 5 ? "" : "mr2"}`, "style":`outline-color: ${vnode.attrs.color};background-color:${fill ? vnode.attrs.color :"white"}`})
+                    return m("a", {"class": `w-25 outline h1 ${item == 5 ? "" : "mr2"}`, href:`#!/${Order[item]}`,"style":`outline-color: ${vnode.attrs.color};background-color:${fill ? vnode.attrs.color :"white"}`})
                   }) 
                 ) : null,
                 m("h1", {"class":"f3 f1-ns fw7", "style":`color:${vnode.attrs.color || "black"}`}, 

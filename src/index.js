@@ -36,7 +36,7 @@ localforage.ready().then(function(){
                 return m(Layout, {title: "Lighthouse: a guide to good data stewardship for trade unions",
                 step: null,
                 nextLink: "purpose",
-                nextCopy: "What is your project for?",
+                nextCopy: "Start the quiz!",
                 prevLink: null,
                 prevCopy: null }, m(Introduction))
             }
