@@ -19,7 +19,7 @@ const Results = {
             m(Purpose, {
                 answers: Model.answers, 
                 section: "purpose", 
-                copy: "disabled"
+                
             }),
             m("h1", {"class":"f2-ns f4 fw7 mt5", "style":`color:"black"}`}, 
                 "Beneficiaries"            
@@ -27,7 +27,6 @@ const Results = {
             m(Beneficiaries, {
                 answers: Model.answers, 
                 section: "beneficiaries", 
-                copy: "disabled"
             }),
             m("h1", {"class":"f2-ns f4 fw7 mt5", "style":`color:"black"}`}, 
                 "Assets"            
@@ -35,7 +34,6 @@ const Results = {
             m(Assets, {
                 answers: Model.answers, 
                 section: "assets", 
-                copy: "disabled"
             }),
             m("h1", {"class":"f2-ns f4 fw7 mt5", "style":`color:"black"}`}, 
                 "Management"            
@@ -43,7 +41,6 @@ const Results = {
             m(Management, {
                 answers: Model.answers, 
                 section: "management", 
-                copy: "disabled"
             }),
             m("h1", {"class":"f2-ns f4 fw7 mt5", "style":`color:"black"}`}, 
                 "Permissions"            
@@ -51,7 +48,6 @@ const Results = {
             m(Permissions, {
                 answers: Model.answers, 
                 section: "permissions", 
-                copy: "disabled"
             }),
             m("h1", {"class":"f2-ns f4 fw7 mt5", "style":`color:"black"}`}, 
                 "Risks"            
@@ -59,7 +55,6 @@ const Results = {
             m(Risks, {
                 answers: Model.answers, 
                 section: "risks", 
-                copy: "disabled"
             }),
         ])
     }
