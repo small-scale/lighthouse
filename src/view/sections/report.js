@@ -9,9 +9,8 @@ import {ManagementReport} from "./management"
 import {PermissionsReport} from "./permissions"
 import {RisksReport} from "./risks"
 
-import {resultHeader} from "../components/components"
-
 const Report = {
+   
     view:(vnode)=>{
         return m("div", [
             m("h1", {"class":"f2-ns f4 fw7 mt3-ns mt2", "style":`color:"black"}`}, 

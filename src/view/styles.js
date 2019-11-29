@@ -3,8 +3,8 @@
  const Colors = {
      purpose:
      {
-         primary: "#9013FE",
-         lighter: "#e3c3fe"
+         primary: "#A3248F",
+         lighter: "#f0bfe9"
      },
      beneficiaries:{
          primary: "#1A32A7",

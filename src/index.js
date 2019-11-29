@@ -219,7 +219,7 @@ localforage.ready().then(function(){
             },
             render: ()=>{
                 return m(Layout, 
-                        {title: "What you answered",
+                        {title: "Your answers",
                         prevLink: "report",
                         prevCopy: "What risks does your project face?",
                         nextCopy: null,
