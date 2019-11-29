@@ -28,11 +28,11 @@ const Model = {
             tracking: null,
             mitigation: [false, false, false]
         },
-        version: 0.2
+        version: "2"
     },
     answers: {},
     reset: ()=>{
-        localforage.setItem('answers', Model.defaults).then(
+        localforage.setItem(`answers-${Model.version}`, Model.defaults).then(
             Model.answers = Model.defaults
         )
     }

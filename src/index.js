@@ -20,12 +20,12 @@ import localforage from "./model/storage"
 
 
 localforage.ready().then(function(){
-    localforage.getItem('answers').then(function(value) {
+    localforage.getItem(`answers-${Model.version}`).then(function(value) {
      //   console.log(value)
      if(value!=null && value.version === Model.defaults.version){
         Model.answers = value
      } else {
-         Model.answers = Model.defaults
+        Model.answers = Model.defaults
      }
 
      m.route(document.body, "/",{
