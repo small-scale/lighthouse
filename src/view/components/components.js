@@ -9,7 +9,7 @@ import { Dispatch } from "../../model/model"
 import Colors from "../styles"
 
 const emojiFaceScale = ["😱","😰", "😐", "😁", "🤩"]
-const emojiScale = ["😐", "😊", "🙂", "😁", "🤩"]
+const emojiScale = ["😐", "🙂","😊", "😁", "🤩"]
 const emojiFireScale = ["🕯️","🔥","💡","🔦","☀️"]
 const emojiSunScale = ["☁️", "🌥️","⛅","🌤️","☀️"]
 
