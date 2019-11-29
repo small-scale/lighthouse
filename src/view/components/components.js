@@ -22,11 +22,42 @@ const subSectionHeader = {
     }
 }
 
+const getEmojiByAnswer = (answer)=>{
+    console.log(answer)
+    if(Array.isArray(answer)){
+        //is a checkbox
+        const trueCount = countBy(identity)(answer)["true"] || 0
+        const length = answer.length
+        if(length == 3){
+            const level = [0,2,3,4]
+            return emojiScale[level[trueCount]]
+        }
+        else if (length == 4){
+            const level = [0,1,2,3,4]
+            return emojiScale[level[trueCount]]
+
+        }
+        else if (length == 5){
+            const level = [0,0,1,2,3,4]
+            return emojiScale[level[trueCount]]
+        }
+    } else {
+        return emojiScale[answer]
+    }
+}
+
 const resultHeader = {
+    oncreate:(vnode)=>{
+        twemoji.parse(vnode.dom)
+    },
     view: (vnode)=>{
-        return m("div", {class:"dt mv2 outline w-100 tc ba b--black bw1 f1 mr2 white"}, [
-            m("div",{class:"dtc ph3 w-20 v-mid f3 pv2", style:`background-color:${Colors[vnode.attrs.section]["lighter"] }`}, vnode.attrs.emoji),
-            m("div",{class:`dtc v-mid ph2 pv2 tl f5 bg-black-10`}, ""),
+        const selected = view(lensPath(vnode.attrs.path), vnode.attrs.answers)
+        console.log(vnode.attrs.answers)
+        return m("h2", {class:`dt w-100 white mt3"}`, style: `background-color:${Colors[vnode.attrs.section]["primary"]}`}, [
+            m("div",{class:"dtc ph3 w-20-ns w-25 v-mid f3 pv2"},[
+                getEmojiByAnswer(selected)
+            ]),
+            m("div", {class:"ml2 dtc f3-ns f5 v-mid"}, vnode.attrs.subtitle),     
         ])
     }
 }
@@ -164,4 +195,4 @@ checkbox list component should get
     - answer path
 */
 
-export {subSectionHeader, tableComponent, checkboxListComponent}
+export {subSectionHeader, tableComponent, checkboxListComponent, resultHeader}

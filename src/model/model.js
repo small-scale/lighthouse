@@ -5,37 +5,36 @@ import localforage from "./storage"
 const Model = {
     defaults: {
         purpose: {
-            basics: null,
-            details: [false, false, false],
+            basics: [false, false, false, false, false],
             progress: null
         },
         beneficiaries: {
-            identify: null,
-            ownership: null,
-            stakeholders: [false, false, false],
-            protection: null
+            involving: null,
+            partners: [false, false, false],
         },
         assets: {
-            inventory: null,
-            ownership: [false, false, false, false, false],
-            use: [false, false, false, false] 
+            practice: [false, false, false, false, false],
+            minimize: [false, false, false, false],
+            protection: null,
         },
         management: {
-            management: [false, false, false, false]
+            responsible: [false, false, false, false]
         },
         permissions: {
-            managing: null,
+            principles: null,
             checking: [false, false, false]
         },
         risks: {
             tracking: null,
             mitigation: [false, false, false]
         },
-        version: 0.1
+        version: 0.2
     },
     answers: {},
     reset: ()=>{
-        Model.answers = Model.defaults
+        localforage.setItem('answers', Model.defaults).then(
+            Model.answers = Model.defaults
+        )
     }
 
 
