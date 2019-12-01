@@ -4,7 +4,9 @@ import {Model} from "../model/model"
 const Order = ["purpose", "beneficiaries", "assets", "management", "permissions", "risks"]
 
 const Layout = {
+    
     view: (vnode)=>{
+      const path = m.route.get()===""
         return [
             m("nav", {"class":"dt w-100  flex-ns border-box center pa3 pb3-ns pb0 ph5-l"},
               [
@@ -14,9 +16,12 @@ const Layout = {
 
                    // m("img", {"class":"dib h3","src":"/img/logo.png","alt":"Digital Public"})
                   ]
-                ), m("div", {"class":"dtc-ns dn v-mid mid-gray  tl-ns tc mb1","href":"#","title":"Home"},
+                ), m("div", {"class":`${path ? "dtc-ns db": "dtc-ns dn"} v-mid mid-gray  tl-ns tc mb1`,"href":"#","title":"Home"},
                 [
+                 path ? 
+                  m("img", {"class":"dtc v-mid h3 pv4 ml3","src":"static/logo.png","alt":"Lighthouse"}) : 
                    m("div", {"class":"dtc h4-ns f3-ns v-mid f4 fw2 montserrat near-black"}, "Lighthouse: a data stewardship guide"),
+                             
 
                  // m("img", {"class":"dib h3","src":"/img/logo.png","alt":"Digital Public"})
                 ]
