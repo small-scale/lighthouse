@@ -20,8 +20,10 @@ import localforage from "./model/storage"
 
 
 localforage.ready().then(function(){
-    localforage.getItem(`answers-${Model.version}`).then(function(value) {
+    localforage.getItem(`answers-${Model.defaults.version}`).then(function(value) {
      //   console.log(value)
+     console.log(value)
+     console.log(Model.defaults.version)
      if(value!=null && value.version === Model.defaults.version){
         Model.answers = value
      } else {

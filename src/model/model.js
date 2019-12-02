@@ -32,9 +32,11 @@ const Model = {
     },
     answers: {},
     reset: ()=>{
-        localforage.setItem(`answers-${Model.version}`, Model.defaults).then(
+        localforage.setItem(`answers-${Model.defaults.version}`, Model.defaults).then(
             Model.answers = Model.defaults
-        )
+        ).catch(function(err){
+            console.log(err)
+        })
     }
 
 
@@ -44,9 +46,11 @@ const Dispatch = (path, value) =>{
     const answerPath = lensPath(path)
     const newAnswers = set(answerPath, value, Model.answers)
 
-    localforage.setItem('answers', newAnswers).then(
+    localforage.setItem(`answers-${Model.defaults.version}`, newAnswers).then(
         Model.answers = newAnswers
-    )
+    ).catch(function(err){
+        console.log(err)
+    })
 
 }
 

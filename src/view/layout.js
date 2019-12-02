@@ -6,7 +6,7 @@ const Order = ["purpose", "beneficiaries", "assets", "management", "permissions"
 const Layout = {
     
     view: (vnode)=>{
-      const path = m.route.get()===""
+      const path = (m.route.get()==="") || (m.route.get()==="/report") || (m.route.get()==="/results") 
         return [
             m("nav", {"class":"dt w-100  flex-ns border-box center pa3 pb3-ns pb0 ph5-l"},
               [
