@@ -19,7 +19,7 @@ const Layout = {
                 ), m("div", {"class":`${path ? "dtc-ns db": "dtc-ns dn"} v-mid mid-gray  tl-ns tc mb1`,"href":"#","title":"Home"},
                 [
                  path ? 
-                  m("img", {"class":"dtc v-mid h3 pv4 ml3","src":"static/logo.png","alt":"Lighthouse"}) : 
+                  m("img", {"class":"dtc v-mid h3 pv4 ml3","src":"static/prospect.png","alt":"Prospect"}) : 
                    m("div", {"class":"dtc h4-ns f3-ns v-mid f4 fw2 montserrat near-black"}, "Lighthouse: a data stewardship guide"),
                              
 
@@ -73,10 +73,28 @@ const Layout = {
                     m("small", {"class":"f6 b db mv2"},
                       [
                         "Lighthouse is a collaboration of ", 
-                        m("a", {"class": "link mid-gray", "href":"http://www.thefutureworldofwork.org/"}, "UNI Global Union"),", ", 
+                        m("a", {"class": "link mid-gray", "href":"http://www.prospect.org.uk/"}, "Prospect"),", ", 
                         m("a", {"class": "link mid-gray", "href":"https://digitalpublic.io/"}, "Digital Public"), ", ",
                         m("a", {"class": "link mid-gray", "href":"https://web.law.duke.edu/dclt/"}, "Duke Center on Law and Technology"),  ", and ",  
                         m("a", {"class": "link mid-gray", "href":"https://smallscale.org/"}, "small scale"),"."
+                      ]
+                    ),
+                    m("section", {"class":"cf"},
+                      [
+                        m("div", {"class":"fl w-100 w-50-ns tc pv4"}, 
+                        m("img", {"class":"dtc v-mid h3","src":"static/prospect.png","alt":"Prospect"}),
+                        ),
+                        m("div", {"class":"fl w-100 w-50-ns tc pv4"}, 
+                        m("img", {"class":"dtc v-mid h3","src":"static/dp-logo.png","alt":"Digital Public"}),
+
+                        ),
+                        m("div", {"class":"fl w-100 w-50-ns tc pv4"}, 
+                        m("img", {"class":"dtc v-mid h3","src":"static/dclt-logo.png","alt":"DCLT"}),
+                        ),
+                        m("div", {"class":"fl w-100 w-50-ns tc pv4"}, 
+                        m("img", {"class":"dtc v-mid h3","src":"static/ss-logo.png","alt":"small scale"}) 
+
+                        )
                       ]
                     ),
                     m("small", {"class":"f6 db mv2 "},
