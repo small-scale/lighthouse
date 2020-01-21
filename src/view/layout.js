@@ -19,7 +19,7 @@ const Layout = {
                 ), m("div", {"class":`${path ? "dtc-ns db": "dtc-ns dn"} v-mid mid-gray  tl-ns tc mb1`,"href":"#","title":"Home"},
                 [
                  path ? 
-                  m("img", {"class":"dtc v-mid h3 pv4 ml3","src":"static/prospect.png","alt":"Prospect"}) : 
+                  m("img", {"class":"dib v-mid h3 pv4 ml3","src":"static/prospect.png","alt":"Prospect"}) : 
                    m("div", {"class":"dtc h4-ns f3-ns v-mid f4 fw2 montserrat near-black"}, "Lighthouse: a data stewardship guide"),
                              
 
@@ -82,17 +82,17 @@ const Layout = {
                     m("section", {"class":"cf"},
                       [
                         m("div", {"class":"fl w-100 w-50-ns tc pv4"}, 
-                        m("img", {"class":"dtc v-mid h3","src":"static/prospect.png","alt":"Prospect"}),
+                        m("img", {"class":"dib v-mid h3","src":"static/prospect.png","alt":"Prospect"}),
                         ),
                         m("div", {"class":"fl w-100 w-50-ns tc pv4"}, 
-                        m("img", {"class":"dtc v-mid h3","src":"static/dp-logo.png","alt":"Digital Public"}),
+                        m("img", {"class":"dib v-mid h3","src":"static/dp-logo.png","alt":"Digital Public"}),
 
                         ),
                         m("div", {"class":"fl w-100 w-50-ns tc pv4"}, 
-                        m("img", {"class":"dtc v-mid h3","src":"static/dclt-logo.png","alt":"DCLT"}),
+                        m("img", {"class":"dib v-mid h3","src":"static/dclt-logo.png","alt":"DCLT"}),
                         ),
                         m("div", {"class":"fl w-100 w-50-ns tc pv4"}, 
-                        m("img", {"class":"dtc v-mid h3","src":"static/ss-logo.png","alt":"small scale"}) 
+                        m("img", {"class":"dib v-mid h3","src":"static/ss-logo.png","alt":"small scale"}) 
 
                         )
                       ]
